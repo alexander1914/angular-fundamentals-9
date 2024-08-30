@@ -1,0 +1,19 @@
+{
+    "products": [
+        {
+            "id": 1,
+            "name": "Caneta BIC verde",
+            "price": 2.80
+        },
+        {
+            "id": 2,
+            "name": "Lapis FrabCastell",
+            "price": 0.80
+        },
+        {
+            "id": 3,
+            "name": "Cardeno 24 Materias",
+            "price": 25.50
+        }
+    ]
+}
