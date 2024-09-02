@@ -11,6 +11,8 @@ npm i -g @angular/cli: to configure the angular to this project.
 
 ng new nameproject --minimal
 
+ng g c folder/name
+
 # Material do Google
 
 ng add @angular/material
