@@ -13,6 +13,8 @@ ng new nameproject --minimal
 
 ng g c folder/name
 
+ng g d name directives
+
 # Material do Google
 
 ng add @angular/material

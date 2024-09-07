@@ -1,9 +1,12 @@
 <mat-toolbar class="footer">
     <span>
         Developing
-        <i class="material-icons red v-middle">
+        <i class="material-icons v-middle" appRed>
             favorite
         </i>
         by <a href="https://www.linkedin.com/in/dev-alexander/"><strong>Alexander Albuquerque Oliveira<i class="material-icons">link</i></strong></a>
     </span>
+    <ul>
+        <li *myFor="let n em [1, 2, 3]"></li>
+    </ul>
 </mat-toolbar>
