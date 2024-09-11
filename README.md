@@ -18,3 +18,6 @@ ng g d name directives
 # Material do Google
 
 ng add @angular/material
+
+# Policy Microsoft
+Get-ExecutionPolicy -List
