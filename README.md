@@ -21,3 +21,4 @@ ng add @angular/material
 
 # Policy Microsoft
 Get-ExecutionPolicy -List
+Set-ExecutionPolicy Bypass -Scope Process
