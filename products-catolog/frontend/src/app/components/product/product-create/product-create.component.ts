@@ -8,5 +8,17 @@ import { Component } from '@angular/core';
   styleUrl: './product-create.component.css'
 })
 export class ProductCreateComponent {
+  
+  propLegal = "qualquer"
+
+  constructor(){ }
+
+  ngOnInit(): void{
+
+  }
+
+  fazerAlgo(): void{
+    console.log("Fazendo Algo agora ....");    
+  }
 
 }
