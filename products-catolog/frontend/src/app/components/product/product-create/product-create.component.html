@@ -1,10 +1,25 @@
-<!-- Testando o binding com evento click -->
-<div class="container">
-    <div class="row">
-        <button mat-raised-button (click)="createProduct()">Salvar</button>&nbsp;
-        <button mat-raised-button (click)="cancel()">Cancelar</button>
-    </div>
-</div>
+<!-- toedata binding -->
+<mat-card>
+    <mat-card-header>
+        <mat-card-title>Novo Produto</mat-card-title>
+    </mat-card-header>
+    <br >    
+    <form class="form">
+        <mat-form-field>
+            <mat-label>Nome</mat-label>
+            <input matInput placeholder="Nome" [(ngModel)]="product.name" name="name">
+        </mat-form-field>
+        <mat-form-field>
+            <mat-label>Preço</mat-label>
+            <input matInput placeholder="Preço (R$)" [(ngModel)]="product.price" name="price">
+        </mat-form-field>                
+    </form>    
+     <div>
+        <button id="btnSave" mat-raised-button (click)="createProduct()">Salvar</button>
+        <button id="btnCancel" mat-raised-button (click)="cancel()">Cancelar</button>
+     </div>    
+</mat-card>
+
     
 
 
