@@ -13,17 +13,20 @@ Project
 ng new nameproject --minimal
 
 Component
-ng g c folder/name
+ng g c folder/<componente-name>
 
 Diretivas
 ng g d name directives
 
 Service
-ng g s component folder/name
+ng g s component folder/<componente-name>
 
 # Material do Google
 
 ng add @angular/material
+
+# Angular Schematics
+ng generete @angular/material:table <componente-name>
 
 # Policy Microsoft
 Get-ExecutionPolicy -List
