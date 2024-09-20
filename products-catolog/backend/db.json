@@ -2,33 +2,23 @@
   "products": [
     {
       "id": "1",
-      "name": "Caneta BIC verde",
-      "price": 2.8
-    },
-    {
-      "id": "2",
       "name": "Lapis FrabCastell",
       "price": 0.8
     },
     {
+      "id": "2",
+      "name": "Caneta Azul",
+      "price": 0.9
+    },
+    {
       "id": "3",
-      "name": "Cardeno 24 Materias",
-      "price": 25.5
+      "name": "Borracha",
+      "price": 0.3
     },
     {
-      "id": "4233",
-      "name": "Produto de teste",
-      "price": 0
-    },
-    {
-      "id": "7034",
-      "name": "Testando Produto do Front",
-      "price": "0.10"
-    },
-    {
-      "id": "a474",
-      "name": "Laptop IBM",
-      "price": "1.990"
+      "id": "1e34",
+      "name": "Laptop Asuus i5",
+      "price": "2500"
     }
   ]
 }

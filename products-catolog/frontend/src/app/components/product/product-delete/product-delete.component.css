@@ -9,11 +9,11 @@ button {
 }
 
 #btnUpdate{
-    background-color: deepskyblue;
+    background-color: red;
     color: white;
 }
 
 #btnCancel {
-    background-color: red;
+    background-color: grey;
     color: white;
 }

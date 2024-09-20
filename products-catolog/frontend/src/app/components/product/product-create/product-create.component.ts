@@ -34,7 +34,7 @@ export class ProductCreateComponent {
   createProduct(): void {
     this.productService.create(this.product).subscribe(() => {
       this.productService.showMessage("Produto Criado com Sucessso !")
-      this.router.navigate(['/products'])
+      this.router.navigate(['/products/product'])
     })    
   }
 

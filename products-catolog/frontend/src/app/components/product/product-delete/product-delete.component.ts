@@ -1,46 +1,46 @@
 import { Component, OnInit } from '@angular/core';
+import { ProductService } from '../product.service';
+import { ActivatedRoute, Router } from '@angular/router';
+import { Product } from '../product.model';
+
 import { FormsModule } from '@angular/forms'
 import { MatButtonModule } from '@angular/material/button'
 import { MatFormFieldModule } from '@angular/material/form-field'
 import { MatInputModule } from '@angular/material/input'
 import { MatCardModule } from '@angular/material/card';
 
-import { Product } from '../product.model';
-import { ProductService } from '../product.service';
-import { ActivatedRoute, Router } from '@angular/router';
-
 @Component({
-  selector: 'app-product-update',
+  selector: 'app-product-delete',
   standalone: true,
   imports: [MatButtonModule, MatFormFieldModule, MatInputModule, FormsModule, MatCardModule],
-  templateUrl: './product-update.component.html',
-  styleUrl: './product-update.component.css'
+  templateUrl: './product-delete.component.html',
+  styleUrl: './product-delete.component.css'
 })
-export class ProductUpdateComponent implements OnInit {
+export class ProductDeleteComponent implements OnInit {
 
   product: Product = {
+    id: 1,
     name: '',
     price: null
   }
-
+  
   constructor(
     private productService: ProductService,
     private router: Router,
-    private route: ActivatedRoute
-  ) { }
-
+    private route: ActivatedRoute) {}
+  
   ngOnInit(): void {
     const id: string = this.route.snapshot.paramMap.get('id')!
     this.productService.readById(id).subscribe(product => {
       this.product = product
-    });
+    })
   }
 
-  updateProduct(): void {
-    this.productService.update(this.product).subscribe(() => {
-      this.productService.showMessage('Produto atualizado com sucesso !')
+  deleteProduct(): void {
+    this.productService.delete(this.product.id!).subscribe(product => {
+      this.productService.showMessage("Produto excluído com sucesso...")
       this.router.navigate(['products/product'])
-    });
+    })
   }
 
   cancel(): void {
