@@ -13,13 +13,13 @@ Project
 ng new nameproject --minimal
 
 Component
-ng g c folder/<componente-name>
+ng g c <componente-name>
 
 Diretivas
 ng g d name directives
 
 Service
-ng g s component folder/<componente-name>
+ng g s component <componente-name>
 
 # Material do Google
 
